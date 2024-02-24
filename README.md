@@ -1,0 +1,1 @@
+# gradle-ansible-vault-plugin
