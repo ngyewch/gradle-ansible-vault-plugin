@@ -11,7 +11,7 @@ plugins {
     id("se.ascp.gradle.gradle-versions-filter") version "0.1.16"
 }
 
-group = "com.github.ngyewch.gradle"
+group = "io.github.ngyewch.gradle"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_11
@@ -57,10 +57,10 @@ gradlePlugin {
     vcsUrl.set("https://github.com/ngyewch/gradle-ansible-vault-plugin.git")
     plugins {
         create("gradle-ansible-vault-plugin") {
-            id = "com.github.ngyewch.ansible.vault"
+            id = "io.github.ngyewch.ansible.vault"
             displayName = "Gradle Ansible Vault Plugin"
             description = "Gradle plugin for Ansible Vault."
-            implementationClass = "com.github.ngyewch.gradle.ansible.vault.AnsibleVaultPlugin"
+            implementationClass = "io.github.ngyewch.gradle.ansible.vault.AnsibleVaultPlugin"
             tags.set(listOf("ansible", "ansible-vault"))
         }
     }

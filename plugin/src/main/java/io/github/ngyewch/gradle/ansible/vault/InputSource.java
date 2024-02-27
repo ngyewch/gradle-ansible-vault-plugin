@@ -1,4 +1,4 @@
-package com.github.ngyewch.gradle.ansible.vault;
+package io.github.ngyewch.gradle.ansible.vault;
 
 import java.io.IOException;
 import java.io.InputStream;

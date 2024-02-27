@@ -1,4 +1,4 @@
-package com.github.ngyewch.gradle.ansible.vault;
+package io.github.ngyewch.gradle.ansible.vault;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -14,8 +14,7 @@ public abstract class AnsibleVaultExtension {
 
   public abstract Property<File> getPasswordFile();
 
-  @Nullable
-  private String getPassword() throws IOException {
+  @Nullable private String getPassword() throws IOException {
     if (getPasswordFile().isPresent()) {
       return StringUtils.trimToNull(
           FileUtils.readFileToString(getPasswordFile().get(), StandardCharsets.UTF_8));
@@ -30,7 +29,8 @@ public abstract class AnsibleVaultExtension {
       throw new RuntimeException("password not specified");
     }
     final AnsibleVault ansibleVault = AnsibleVault.readFrom(new FileInputStream(f));
-    return new SimpleFile(new ByteArrayInputSource(AnsibleVaultDecryptor.decrypt(ansibleVault, password)));
+    return new SimpleFile(
+        new ByteArrayInputSource(AnsibleVaultDecryptor.decrypt(ansibleVault, password)));
   }
 
   public SimpleFile file(File f) {

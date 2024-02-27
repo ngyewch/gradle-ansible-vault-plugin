@@ -1,4 +1,4 @@
-package com.github.ngyewch.gradle.ansible.vault;
+package io.github.ngyewch.gradle.ansible.vault;
 
 import de.rtner.security.auth.spi.PBKDF2Engine;
 import de.rtner.security.auth.spi.PBKDF2Parameters;

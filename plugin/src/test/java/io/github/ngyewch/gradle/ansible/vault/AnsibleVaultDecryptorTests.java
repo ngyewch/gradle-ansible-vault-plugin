@@ -1,4 +1,4 @@
-package com.github.ngyewch.gradle.ansible.vault;
+package io.github.ngyewch.gradle.ansible.vault;
 
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;

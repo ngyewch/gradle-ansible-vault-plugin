@@ -2,7 +2,7 @@ import java.util.*
 
 plugins {
     java
-    id("com.github.ngyewch.ansible.vault")
+    id("io.github.ngyewch.ansible.vault")
 }
 
 repositories {
