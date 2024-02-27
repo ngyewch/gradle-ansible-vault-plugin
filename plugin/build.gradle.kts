@@ -26,6 +26,7 @@ dependencies {
 
     implementation("com.fasterxml.jackson.core:jackson-core")
     implementation("com.fasterxml.jackson.core:jackson-databind")
+    implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-toml")
     implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-yaml")
     implementation("commons-codec:commons-codec:1.16.1")
     implementation("commons-io:commons-io:2.15.1")

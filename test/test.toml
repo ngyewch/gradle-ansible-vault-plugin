@@ -1,0 +1,7 @@
+a = 123
+
+[section1]
+b = "Hello"
+
+[section1.child1]
+c = 12.9
